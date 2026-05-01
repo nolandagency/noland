@@ -8,21 +8,41 @@
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
-      background-color: #111;
-      background-image: url('NOLAND_37.svg');
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
+      background-color: #141414;
       min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    }
+
+    .video-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+
+    .video-bg video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #141414;
+      opacity: 0.80;
+      z-index: 1;
     }
 
     .container {
-      max-width: 680px;
+      position: relative;
+      z-index: 2;
+      max-width: 884px;
       padding: 80px 40px;
-      color: #80807b;
     }
 
     p {
@@ -67,6 +87,15 @@
   </style>
 </head>
 <body>
+
+  <div class="video-bg">
+    <video autoplay loop muted playsinline>
+      <source src="NOLAND_IDV_TEXTURE_01.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="overlay"></div>
+
   <div class="container">
     <p>Built for brands that refuse to stand still, we combine strategic thinking, creative excellence, and cultural relevance to help businesses stay in motion.</p>
     <p>We believe brands don't grow in one place. They grow when they flow into new spaces, new conversations, new behaviors, and new possibilities.</p>
@@ -77,5 +106,6 @@
       <a href="mailto:ricardo@noland.agency">ricardo@noland.agency</a>
     </div>
   </div>
+
 </body>
 </html>
