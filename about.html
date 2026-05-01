@@ -3,113 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NO.LAND — About</title>
+  <title>NO.LAND - About</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-
-    body {
-      background-color: #141414;
-      min-height: 100vh;
-    }
-
-    .video-bg {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 0;
-    }
-
-    .video-bg video {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      object-position: top center;
-    }
-
-    .overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: #141414;
-      opacity: 0.80;
-      z-index: 1;
-    }
-
-    .container {
-      position: relative;
-      z-index: 2;
-      max-width: 800px;
-      padding: 32vh 40px 80px 40px;
-    }
-
-    p {
-      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      font-weight: 400;
-      font-size: 1.1rem;
-      line-height: 1.9;
-      margin-bottom: 1.8rem;
-      letter-spacing: 0.01em;
-      color: #80807b;
-    }
-
-    .emails {
-      margin-top: 60px;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-
-    .emails a {
-      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      font-weight: 400;
-      font-size: 1rem;
-      color: #80807b;
-      text-decoration: none;
-      letter-spacing: 0.05em;
-      border-bottom: 1px solid rgba(128,128,123,0.3);
-      padding-bottom: 4px;
-      width: fit-content;
-      transition: color 0.2s, border-color 0.2s;
-    }
-
-    .emails a:hover {
-      color: #a0a09b;
-      border-color: rgba(128,128,123,0.7);
-    }
-
+    body { background-color: #141414; min-height: 100vh; }
+    .video-bg { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; }
+    .video-bg video { width: 100%; height: 100%; object-fit: contain; object-position: top center; }
+    .overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #141414; opacity: 0.80; z-index: 1; }
+    .container { position: relative; z-index: 2; max-width: 800px; padding: 32vh 40px 80px 40px; }
+    p { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 400; font-size: 1.1rem; line-height: 1.9; margin-bottom: 1.8rem; letter-spacing: 0.01em; color: #80807b; }
+    .emails { margin-top: 60px; display: flex; flex-direction: column; gap: 12px; }
+    .emails a { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 400; font-size: 1rem; color: #80807b; text-decoration: none; letter-spacing: 0.05em; border-bottom: 1px solid rgba(128,128,123,0.3); padding-bottom: 4px; width: fit-content; transition: color 0.2s, border-color 0.2s; }
+    .emails a:hover { color: #a0a09b; border-color: rgba(128,128,123,0.7); }
     @media (max-width: 768px) {
-      .video-bg video {
-        object-fit: cover;
-        object-position: center center;
-      }
-      .container {
-        padding: 38vh 24px 60px 24px;
-        max-width: 100%;
-      }
-      p {
-        font-size: 0.95rem;
-        line-height: 1.8;
-      }
-      .emails a {
-        font-size: 0.9rem;
-      }
+      .video-bg video { object-fit: cover; object-position: center center; }
+      .container { padding: 38vh 24px 60px 24px; max-width: 100%; }
+      p { font-size: 0.95rem; line-height: 1.8; }
+      .emails a { font-size: 0.9rem; }
     }
-
     @media (max-width: 480px) {
-      .container {
-        padding: 40vh 20px 60px 20px;
-      }
-      p {
-        font-size: 0.88rem;
-        line-height: 1.7;
-      }
+      .container { padding: 40vh 20px 60px 20px; }
+      p { font-size: 0.88rem; line-height: 1.7; }
     }
   </style>
 </head>
 <body>
-
-  <div class=
+  <div class="video-bg">
+    <video autoplay loop muted playsinline>
+      <source src="NOLAND_IDV_TEXTURE_01.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="overlay"></div>
+  <div class="container">
+    <p>Built for brands that refuse to stand still, we combine strategic thinking, creative excellence, and cultural relevance to help businesses stay in motion.</p>
+    <p>We believe brands don't grow in one place. They grow when they flow into new spaces, new conversations, new behaviors, and new possibilities.</p>
+    <p>From strategy and integrated campaigns to content, media, data analysis, and innovation, we create work that moves people and drives meaningful growth.</p>
+    <p>Because NO.LAND is not nowhere. It's everywhere.</p>
+    <div class="emails">
+      <a href="mailto:sotero@noland.agency">sotero@noland.agency</a>
+      <a href="mailto:ricardo@noland.agency">ricardo@noland.agency</a>
+    </div>
+  </div>
+</body>
+</html>
